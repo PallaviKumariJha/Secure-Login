@@ -1,6 +1,5 @@
 CREATE DATABASE test1;
 USE test1;
-
 CREATE USER 'user-validate'@'localhost' IDENTIFIED BY 'Ican$earcH';
 CREATE USER 'user-input'@'localhost' IDENTIFIED BY 'Pa$$w0rD';
 
