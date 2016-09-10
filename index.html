@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="userSpace">
+		<div id="navbar">
+			<span id="notification"></span><br>
+			<a href="#" id="registerNav">Register</a><br>
+			<a href="#" id="loginNav">Login</a>
+			<select id="insertType">
+				<option value="plainPHP">Plain text PHP</option>
+				<option value="plainProcedure">Plain text procedure</option>
+				<option value="hashPHP">hash insert php</option>
+				<option value="hashProcedure">hash insert procedure</option>
+			</select>
+		</div>
+		<div>	
+			<form id="registerForm">
+				<label>User Name</label><br>
+				<input type="" name="pallavi@mail.com" id="username"><br>
+				<label>Password</label><br>
+				<input type="password" name="min 8 character" id="password"><br>
+				<label>Password</label><br>
+				<input type="password"  id="confirmPassWord"><br>
+				<div class=".submitButton">
+					<button id="register" onclick="registerMe(event)">Submit</button>
+				</div>
+				
+			</form>
+			<form id="loginForm" style="">
+				<label>User Name</label><br>
+				<input type="" name="pallavi@mail.com" id="usernameLogin"><br>
+				<label>Password</label><br>
+				<input type="password" name="min 8 character" id="passwordLogin"><br>
+				<div class=".submitButton">
+					<button id="register" onclick="loginMe(event)">Submit</button>
+				</div>
+			</form>
+		</div>	
+	</div>	
+
+	<script src='jquery.min.js'></script>
+	<script src="login.js"></script>
+
+</body>
+</html>

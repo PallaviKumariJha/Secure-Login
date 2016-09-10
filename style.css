@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#registerForm{
+	display: none;
+	border-radius: 5px;
+	background: #8FD8D8;
+	position: center;
+	width: 20%;
+	height: 50%;
+	padding: 10px 10px 10px 30px;
+}
+
+#loginForm{
+	display: none;
+	border-radius: 5px;
+	background: #8FD8D8;
+	position: center;
+	width: 20%;
+	height: 50%;
+	padding: 10px 10px 10px 30px;
+}
+
+
+#userSpace {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  z-index: 15;
+  top: 30%;
+  left: 40%;
+}
+
+#register{
+  background: #1abc9c;
+  padding: 5px;
+  font-size: 15px;
+  display: block;
+  width: 50%;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 20px 2px 35px;
+  text-align: center;
+}
+
+#insertType{
+  background: #8FD8D8;
+  padding: 5px;
+  font-size: 15px;
+  display: block;
+  width: 24%;
+  border: 0px 0px 1px 0px;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.submitButton{
+	text-align: center;
+}
+
+#registerNav, #loginNav{
+	color: black;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+#registerNav:hover, #loginNav:hover {
+  color: #1abc9c;
+}
+
+.green {
+  color: #1abc9c;
+}
+
+#loginNav{
+  display: none;
+  font-size: 24px;
+}
