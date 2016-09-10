@@ -52,7 +52,7 @@ RETURNS INT
     END IF;
     RETURN 0;
   END;
-
+//
 
 CREATE FUNCTION matchHash (uname VARCHAR(16), passwd VARCHAR(32))
 RETURNS INT
@@ -62,7 +62,7 @@ RETURNS INT
     END IF;
     RETURN 0;
   END;
-
+//
 
 DELIMITER ;
 
