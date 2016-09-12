@@ -70,3 +70,5 @@ GRANT EXECUTE ON FUNCTION plainAdd TO 'user-input'@'localhost';
 GRANT EXECUTE ON FUNCTION hashAdd TO 'user-input'@'localhost';
 GRANT EXECUTE ON FUNCTION matchPlain TO 'user-validate'@'localhost';
 GRANT EXECUTE ON FUNCTION matchHash TO 'user-validate'@'localhost';
+
+FLUSH PRIVILEGES;
