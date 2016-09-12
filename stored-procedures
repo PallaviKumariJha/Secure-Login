@@ -7,13 +7,6 @@ CREATE USER 'user-input'@'localhost' IDENTIFIED BY 'Pa$$w0rD';
 CREATE TABLE myLoginPlain (name varchar(16) NOT NULL UNIQUE, passwd varchar(32) NOT NULL);
 CREATE TABLE myLoginHashed (name varchar(16) NOT NULL UNIQUE, password varchar(256) NOT NULL);
 
-GRANT SELECT ON myLoginPlain TO 'user-validate'@'localhost';
-GRANT SELECT ON myLoginHashed TO 'user-validate'@'localhost';
-GRANT INSERT ON myLoginPlain TO 'user-input'@'localhost';
-GRANT INSERT ON myLoginHashed TO 'user-input'@'localhost';
-
-
-
 DELIMITER //
 
 CREATE FUNCTION plainAdd (uname VARCHAR(16), passwd VARCHAR(32))
@@ -65,6 +58,11 @@ RETURNS INT
 //
 
 DELIMITER ;
+
+GRANT SELECT ON myLoginPlain TO 'user-validate'@'localhost';
+GRANT SELECT ON myLoginHashed TO 'user-validate'@'localhost';
+GRANT INSERT ON myLoginPlain TO 'user-input'@'localhost';
+GRANT INSERT ON myLoginHashed TO 'user-input'@'localhost';
 
 GRANT EXECUTE ON FUNCTION plainAdd TO 'user-input'@'localhost';
 GRANT EXECUTE ON FUNCTION hashAdd TO 'user-input'@'localhost';
